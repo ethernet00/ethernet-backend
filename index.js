@@ -7,7 +7,7 @@ const app =express()
  app.use(express.urlencoded())
  app.use(cors())
 
- mongoose.connect('mongodb://127.0.0.1:27017/myLoginRegisterDB',{
+ mongoose.connect('mongodb+srv://vijender:vijender250714@cluster0.utozryt.mongodb.net/myLoginRegisterDB?retryWrites=true&w=majority',{
     useNewUrlParser:true,
     useUnifiedTopology:true
  },()=>{
@@ -137,6 +137,6 @@ if(process.env.NODE_ENV == "production"){
     app.use(express.static("client/build"));
 }
 
-app.listen(PORT,()=>{
+app.listen(PORT,'0.0.0.0',()=>{
     console.log(`be started at port ${PORT}`)
 })
