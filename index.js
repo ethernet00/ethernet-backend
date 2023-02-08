@@ -7,7 +7,7 @@ const app =express()
  app.use(express.urlencoded())
  app.use(cors())
 
- mongoose.connect('mongodb+srv://vijender:vijender250714@cluster0.utozryt.mongodb.net/myLoginRegisterDB?retryWrites=true&w=majority',{
+ mongoose.connect('mongodb+srv://ethernet:ethernet@cluster0.ekojiqk.mongodb.net/myLoginRegisterDB?retryWrites=true&w=majority',{
     useNewUrlParser:true,
     useUnifiedTopology:true
  },()=>{
